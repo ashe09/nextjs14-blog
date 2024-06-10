@@ -4,6 +4,8 @@ import Image from "next/image";
 import { fullBlog } from "@/app/lib/interface";
 import { client, urlFor } from "@/app/lib/sanity";
 
+export const revalidate = 30;
+
 async function getData(slug: string) {
   const query = `
   *[_type == "blog" && slug.current == '${slug}'] {

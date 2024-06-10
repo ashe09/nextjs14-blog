@@ -7,6 +7,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { simpleBlogCard } from "@/app/lib/interface";
 import { client, urlFor } from "@/app/lib/sanity";
 
+export const revalidate = 30;
+
 async function getData() {
   const query = `
   *[_type == "blog"] | order(_createAt desc) {
