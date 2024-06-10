@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Navbar />
-          <main className="mx-auto max-w-5xl px-4">{children}</main>
+          <main className="mx-auto max-w-5xl px-7">{children}</main>
         </ThemeProvider>
       </body>
     </html>
